@@ -12,9 +12,9 @@
 
    - github에 접속하여 < username >.github.io 라는 이름으로 새로운 repository를 생성하자.
 
-   ![image-20210910165754889]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910165754889.png)
+   ![image-20210910165754889]([Vue.js] Github Pages로 배포하기.assets/image-20210910165754889.png)
 
-   ![image-20210910170146326]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910170146326.png)
+   ![image-20210910170146326]([Vue.js] Github Pages로 배포하기.assets/image-20210910170146326.png)
 
 2. Vue 프로젝트 생성 & git 저장소 연결
 
@@ -33,7 +33,7 @@
 
    - "vue create 프로젝트명" 명령어를 입력하면 프로젝트명 폴더가 생기고, 그 안에 파일들이 생기는데 폴더 안 파일과 .git 이 같은 위치에 있어야한다! (플젝 폴더랑 .git파일을 같은 위치에 두고 안 돼서 당황했다.. 아래와 같은 구조로 만들면 된다. vue 파일 생성한 후 dist폴더는 없는 게 정상!)
 
-   ![image-20210910175957898]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910175957898.png)
+   ![image-20210910175957898]([Vue.js] Github Pages로 배포하기.assets/image-20210910175957898.png)
 
 3. GitHub Pages 로 배포하기 위한 라이브러리 추가하기
 
@@ -42,6 +42,7 @@
    ```
 
    ```json
+   // package.json
    {
      "name": "portfolio",
      "version": "0.1.0",
@@ -73,17 +74,18 @@
    $ yarn deploy
    ```
 
-   ![image-20210910175756108]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910175756108.png)
+   ![image-20210910175756108]([Vue.js] Github Pages로 배포하기.assets/image-20210910175756108.png)
 
 5. 저장소 setting 후, 배포 페이지가 잘 뜨면 완료 
 
    - settings - Pages - Branch가 master로 되어있다면 gh-pages로 변경 - site확인하기
    - 우리가 gh-pages 라이브러리를 통해 빌드/배포한 파일이 gh-pages 브랜치에 들어가있다.
 
-   ![image-20210910174624967]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910174624967.png)
+   ![image-20210910174624967]([Vue.js] Github Pages로 배포하기.assets/image-20210910174624967.png)
 
-   ![image-20210910174444171]([tmp] [Vue.js] Github Pages로 배포하기.assets/image-20210910174444171.png)
+   ![image-20210910174444171]([Vue.js] Github Pages로 배포하기.assets/image-20210910174444171.png)
 
 
 
 이제 자신만의 홈페이지를 만들면 된다. 수정한 후 yarn deploy를 실행하면 자동 반영된다.
+
